@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_shared_twitter_apps",
+  "info": {
+    "displayName": "twitterAppCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "twitter_app_id_iphone": {
+      "type": "string"
+    },
+    "twitter_app_id_ipad": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_app_id_googleplay": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_app_url_iphone": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_app_url_ipad": {
+      "type": "string"
+    },
+    "twitter_app_country": {
+      "type": "string"
+    },
+    "twitter_app_url_googleplay": {
+      "type": "string"
+    },
+    "twitter_app_name_googleplay": {
+      "type": "string"
+    },
+    "twitter_app_name_phone": {
+      "type": "string"
+    },
+    "twitter_app_name_ipad": {
+      "type": "string"
+    },
+    "twitter_card": {
+      "type": "enumeration",
+      "enum": [
+        "app"
+      ],
+      "required": true,
+      "default": "app"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_guide_tocs",
+  "info": {
+    "displayName": "guideToc"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

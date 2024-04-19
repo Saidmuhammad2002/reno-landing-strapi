@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_shared_twitter_player_cards",
+  "info": {
+    "displayName": "twitterPlayerCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "twitter_card": {
+      "type": "enumeration",
+      "enum": [
+        "player"
+      ],
+      "default": "player",
+      "required": true
+    },
+    "twitter_title": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_site": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_description": {
+      "type": "string"
+    },
+    "twitter_player": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_player_width": {
+      "type": "integer",
+      "required": true
+    },
+    "twitter_player_height": {
+      "type": "integer",
+      "required": true
+    },
+    "twitter_image_alt": {
+      "type": "string"
+    },
+    "twitter_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "twitter_player_stream": {
+      "type": "string"
+    }
+  }
+}

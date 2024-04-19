@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_twitter_summary_cards",
+  "info": {
+    "displayName": "twitterSummaryCard"
+  },
+  "options": {},
+  "attributes": {
+    "twitter_card": {
+      "type": "enumeration",
+      "enum": [
+        "summary"
+      ],
+      "default": "summary",
+      "required": true
+    },
+    "twitter_site": {
+      "type": "string"
+    },
+    "twitter_title": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_description": {
+      "type": "text"
+    },
+    "twitter_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "twitter_image_alt": {
+      "type": "string"
+    }
+  }
+}

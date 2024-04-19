@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_shared_twitter_socials",
+  "info": {
+    "displayName": "twitterSummaryLargeImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "twitter_card": {
+      "type": "enumeration",
+      "enum": [
+        "summary_large_image"
+      ],
+      "default": "summary_large_image",
+      "required": true
+    },
+    "twitter_site": {
+      "type": "string"
+    },
+    "twitter_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "twitter_title": {
+      "type": "string",
+      "required": true
+    },
+    "twitter_description": {
+      "type": "text"
+    },
+    "twitter_image_alt": {
+      "type": "string"
+    },
+    "twitter_creator": {
+      "type": "string"
+    }
+  }
+}

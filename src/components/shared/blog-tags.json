@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_shared_blog_tags",
+  "info": {
+    "displayName": "blogTags"
+  },
+  "options": {},
+  "attributes": {
+    "tag_name": {
+      "type": "string"
+    }
+  }
+}

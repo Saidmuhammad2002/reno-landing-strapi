@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossaries",
+  "info": {
+    "singularName": "glossary",
+    "pluralName": "glossaries",
+    "displayName": "Glossary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "glossary_tag": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::glossary-tag.glossary-tag",
+      "inversedBy": "glossaries"
+    },
+    "content": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

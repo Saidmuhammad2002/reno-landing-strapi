@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "glossary_tags",
+  "info": {
+    "singularName": "glossary-tag",
+    "pluralName": "glossary-tags",
+    "displayName": "GlossaryTag"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tagName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "glossaries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::glossary.glossary",
+      "mappedBy": "glossary_tag"
+    }
+  }
+}
