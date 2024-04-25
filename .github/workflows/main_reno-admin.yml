@@ -23,6 +23,7 @@ jobs:
 
       - name: yarn install, build,
         run: |
+          rm -rf node_modules package-lock.json
           yarn 
           yarn build 
         
