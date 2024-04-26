@@ -19,16 +19,15 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: "20.x"
+          node-version: "18.x"
 
-      - name: npm install, build,
+      - name: yar install, build,
         run: |
           rm -rf node_modules
           rm -f package-lock.json
-          npm cache clean --force
-          npm install
-          npm run build
-
+          yarn cache clean --force
+          yarn install
+          yarn run build
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
