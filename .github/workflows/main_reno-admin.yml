@@ -27,7 +27,7 @@ jobs:
           rm -f package-lock.json
           npm cache clean --force
           npm install
-          npm build
+          npm run build
 
 
       - name: Zip artifact for deployment
