@@ -23,7 +23,6 @@ jobs:
 
       - name: yarn install, build,
         run: |
-          yarn install --force
           yarn build
 
       - name: Zip artifact for deployment
