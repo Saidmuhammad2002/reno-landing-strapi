@@ -23,6 +23,13 @@ jobs:
 
       - name: yar install, build,
         run: |
+<<<<<<< HEAD
+=======
+          rm -rf node_modules
+          rm -f package-lock.json
+          rm -f yarn.lock
+          yarn cache clean --force
+>>>>>>> 10972bd601600a2a39e3ce753ef098aea02be3f9
           yarn install
           yarn run build
 
