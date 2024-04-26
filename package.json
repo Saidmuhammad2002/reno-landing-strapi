@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "node node_modules/@strapi/strapi/bin/strapi.js build",
-    "develop": "strapi develop",
+    "develop": "node node_modules/@strapi/strapi/bin/strapi.js develop",
     "start": "node node_modules/@strapi/strapi/bin/strapi.js start",
     "strapi": "strapi"
   },
