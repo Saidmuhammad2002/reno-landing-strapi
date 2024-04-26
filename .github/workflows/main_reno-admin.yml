@@ -21,9 +21,14 @@ jobs:
         with:
           node-version: "20.x"
 
-      - name: yarn install, build,
+      - name: npm install, build,
         run: |
-          yarn build
+          rm -rf node_modules
+          rm -f package-lock.json
+          npm cache clean --force
+          npm install
+          npm build
+
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r
